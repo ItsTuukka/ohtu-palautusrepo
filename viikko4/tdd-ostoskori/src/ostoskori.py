@@ -34,7 +34,7 @@ class Ostoskori:
         # poistaa tuotteen
         for ostos in self.kori:
             if poistettava.nimi() == ostos.tuotteen_nimi():
-                if ostos.lukumaara() == 0:
+                if ostos.lukumaara() == 1:
                     self.kori.remove(ostos)
                     return
                 else:
